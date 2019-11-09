@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+{% extends "base.html" %}
+{% block page_content %}
+    <p>Tamanho da frase | Tempo de digitação | Identificação de idade</p>
+    <br>
+    {% for entrada in dados %}
+        <p>{{entrada.char_num}} | {{entrada.timedelta}} | {{entrada.age_id}}</p>
+    {% endfor %}
+{% endblock %}
+</html>
